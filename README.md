@@ -1,4 +1,4 @@
-# grocery_order_app_flutter
+# shopping_app_smit
 
 A new Flutter project.
 
