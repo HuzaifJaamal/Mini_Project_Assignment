@@ -1,4 +1,4 @@
-# shopping_app_smit
+# new1
 
 A new Flutter project.
 

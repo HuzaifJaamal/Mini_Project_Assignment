@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app_smit/pages/CartPage.dart';
-import 'package:shopping_app_smit/pages/Homepage.dart';
+import 'package:mini_project/views/onboardingscreen/onboardingscreen.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
+    return const SafeArea(
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: OnboardingScreen(),
       ),
-      routes: {
-        "/": (context) => HomePage(),
-        "cartPage": (context) => CartPage()
-      },
     );
   }
 }
